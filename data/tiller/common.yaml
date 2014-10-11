@@ -1,0 +1,9 @@
+exec: /usr/bin/supervisord -n
+
+data_sources:
+  - file
+  - environment
+  - random
+
+template_sources:
+  - file

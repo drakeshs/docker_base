@@ -1,0 +1,11 @@
+chdir
+
+startup_message off
+term xterm-256color
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+
+hardstatus alwayslastline
+hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
+
+activity "Activity in %t(%n)"
