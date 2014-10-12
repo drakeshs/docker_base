@@ -13,7 +13,7 @@ RUN  ln -sf /usr/share/zoneinfo/GB /etc/localtime
 
 RUN apt-get update
 RUN apt-get install -y ruby supervisor wget curl cron logrotate screen bcron
-RUN mkdir -p /var/run/screen; chmod 777 /var/run/screen
+RUN mkdir -p /var/run/screen; chmod 775 /var/run/screen
 
 # Setup Tiller
 RUN gem install tiller
